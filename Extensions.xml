@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PSXExtensionHandlerConfiguration handlerName="Java">
+
+	<Extension categorystring="assembly" context="global/percussion/assembly/" deprecated="no" handler="Java" name="dynamicReorgVelocityAssembler" restoreRequestParamsOnError="no">
+		<initParam name="com.percussion.user.description">Reorganize location of dynamic content in page based upon markup</initParam>
+		<initParam name="com.percussion.extension.assembly.libraries">sys_assembly.vm,rx_assembly.vm</initParam>
+		<initParam name="com.percussion.extension.version">1</initParam>
+		<initParam name="className">com.percussion.pso.dynreorg.assembler.VelocityContentAssembler</initParam>
+		<initParam name="com.percussion.extension.reentrant">yes</initParam>
+		<initParam name="com.percussion.extension.assembly.autoReload">yes</initParam>
+		<initParam name="com.percussion.extension.assembly.fileSuffix">.vm</initParam>
+		<interface name="com.percussion.services.assembly.IPSAssembler"/>
+		<suppliedResources/>
+	</Extension>
+	
+</PSXExtensionHandlerConfiguration>
